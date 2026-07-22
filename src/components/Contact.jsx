@@ -82,11 +82,13 @@ const Contact = () => {
             className="glass-card"
             style={{ flex: '1 1 500px', padding: '3rem' }}
           >
-            <form style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }} onSubmit={(e) => e.preventDefault()}>
+            <form action="https://formsubmit.co/chandruyh7@gmail.com" method="POST" style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
               
               <div style={{ position: 'relative' }}>
                 <input 
                   type="text" 
+                  name="name"
+                  required
                   placeholder="Your Name" 
                   style={{ width: '100%', padding: '1rem', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '10px', color: 'white', outline: 'none', fontSize: '1rem' }}
                 />
@@ -95,6 +97,8 @@ const Contact = () => {
               <div style={{ position: 'relative' }}>
                 <input 
                   type="email" 
+                  name="email"
+                  required
                   placeholder="Your Email" 
                   style={{ width: '100%', padding: '1rem', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '10px', color: 'white', outline: 'none', fontSize: '1rem' }}
                 />
@@ -102,13 +106,21 @@ const Contact = () => {
 
               <div style={{ position: 'relative' }}>
                 <textarea 
+                  name="message"
+                  required
                   placeholder="Your Message" 
                   rows="5"
                   style={{ width: '100%', padding: '1rem', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '10px', color: 'white', outline: 'none', fontSize: '1rem', resize: 'none' }}
                 />
               </div>
 
+              {/* Disable Captcha for a smoother experience */}
+              <input type="hidden" name="_captcha" value="false" />
+              {/* Disable Next page to stay on the site (or you can provide a thank you page URL) */}
+              <input type="hidden" name="_next" value="https://myportfolio-eta-blue.vercel.app/" />
+
               <motion.button 
+                type="submit"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 style={{
