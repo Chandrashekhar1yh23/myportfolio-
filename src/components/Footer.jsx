@@ -8,7 +8,7 @@ const Footer = () => {
       <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1.5rem' }}>
         
         <div style={{ fontSize: '1.5rem', fontWeight: 800, color: 'white' }}>
-          Chandrashekhar<span style={{ color: 'var(--accent-purple)' }}>.</span>
+          Chandrashekhar Y H<span style={{ color: 'var(--accent-purple)' }}>.</span>
         </div>
 
         <div style={{ display: 'flex', gap: '1.5rem' }}>
