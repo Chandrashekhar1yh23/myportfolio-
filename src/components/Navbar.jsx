@@ -48,7 +48,7 @@ const Navbar = () => {
       }}
     >
       <div style={{ fontSize: '1.5rem', fontWeight: 800, color: 'white' }}>
-        CYH<span style={{ color: 'var(--accent-blue)' }}>.</span>
+        Chandrashekhar<span style={{ color: 'var(--accent-blue)' }}>.</span>
       </div>
 
       <div style={{ display: 'flex', gap: '2rem' }}>
