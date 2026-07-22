@@ -1,5 +1,6 @@
 import React from 'react';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Mail } from 'lucide-react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 const Footer = () => {
@@ -13,10 +14,10 @@ const Footer = () => {
 
         <div style={{ display: 'flex', gap: '1.5rem' }}>
           <motion.a whileHover={{ y: -5, color: 'var(--accent-blue)' }} href="https://github.com/Chandrashekhar1yh23" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-secondary)', transition: 'color 0.3s' }}>
-            <Github size={24} />
+            <FaGithub size={24} />
           </motion.a>
           <motion.a whileHover={{ y: -5, color: 'var(--accent-blue)' }} href="https://www.linkedin.com/in/chandrashekhar-y-h-3b161b344" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-secondary)', transition: 'color 0.3s' }}>
-            <Linkedin size={24} />
+            <FaLinkedin size={24} />
           </motion.a>
           <motion.a whileHover={{ y: -5, color: 'var(--accent-blue)' }} href="mailto:chandruyh7@gmail.com" style={{ color: 'var(--text-secondary)', transition: 'color 0.3s' }}>
             <Mail size={24} />
