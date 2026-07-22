@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
+import { Github, Linkedin } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Navbar = () => {
@@ -47,8 +48,13 @@ const Navbar = () => {
         alignItems: 'center'
       }}
     >
-      <div style={{ fontSize: '1.5rem', fontWeight: 800, color: 'white' }}>
-        Chandrashekhar<span style={{ color: 'var(--accent-blue)' }}>.</span>
+      <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
+        <a href="https://github.com/Chandrashekhar1yh23" target="_blank" rel="noopener noreferrer" style={{ color: 'white', transition: 'color 0.3s', display: 'flex' }} onMouseEnter={(e) => e.currentTarget.style.color = 'var(--accent-blue)'} onMouseLeave={(e) => e.currentTarget.style.color = 'white'}>
+          <Github size={28} />
+        </a>
+        <a href="https://www.linkedin.com/in/chandrashekhar-y-h-3b161b344" target="_blank" rel="noopener noreferrer" style={{ color: 'white', transition: 'color 0.3s', display: 'flex' }} onMouseEnter={(e) => e.currentTarget.style.color = 'var(--accent-blue)'} onMouseLeave={(e) => e.currentTarget.style.color = 'white'}>
+          <Linkedin size={28} />
+        </a>
       </div>
 
       <div style={{ display: 'flex', gap: '2rem' }}>
