@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Tilt } from 'react-tilt';
+import Tilt from 'react-parallax-tilt';
 import { Code, ExternalLink } from 'lucide-react';
 
 const projects = [
@@ -46,7 +46,7 @@ const ProjectCard = ({ project, index }) => {
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: index * 0.2 }}
     >
-      <Tilt options={{ max: 15, scale: 1.02, speed: 400 }} style={{ height: '100%' }}>
+      <Tilt tiltMaxAngleX={15} tiltMaxAngleY={15} scale={1.02} transitionSpeed={400} style={{ height: '100%' }}>
         <div className="glass-card" style={{ height: '100%', display: 'flex', flexDirection: 'column', overflow: 'hidden', padding: '1rem' }}>
           
           <div style={{ position: 'relative', width: '100%', height: '200px', borderRadius: '15px', overflow: 'hidden' }}>

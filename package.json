@@ -14,8 +14,8 @@
     "lucide-react": "^1.25.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
-    "react-scroll": "^1.9.3",
-    "react-tilt": "^1.0.2"
+    "react-parallax-tilt": "^1.7.333",
+    "react-scroll": "^1.9.3"
   },
   "devDependencies": {
     "@types/react": "^19.2.17",
